@@ -45,7 +45,8 @@ fun SplashScreen(navController: NavHostController) {
     LaunchedEffect(key1 = true) {
         startAnimation = true
         delay(2500) // Duración del "telón"
-        navController.navigate("home") {
+        // Cambiado de "home" a "login" para que el usuario deba iniciar sesión
+        navController.navigate("login") {
             popUpTo("splash") { inclusive = true }
         }
     }

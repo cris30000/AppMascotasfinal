@@ -5,6 +5,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.rescatando_mascotas_forever.presentation.auth.login.LoginScreen
+import com.example.rescatando_mascotas_forever.presentation.auth.register.RegisterScreen
 import com.example.rescatando_mascotas_forever.presentation.home.HomeScreen
 import com.example.rescatando_mascotas_forever.presentation.adopciones.AdopcionListScreen
 import com.example.rescatando_mascotas_forever.presentation.rescates.RescateScreen
@@ -41,6 +42,9 @@ fun AppNavigation() {
         }
         composable("login") {
             LoginScreen(navController = navController)
+        }
+        composable("registro") {
+            RegisterScreen(navController = navController)
         }
         composable("home") {
             HomeScreen(navController = navController)
