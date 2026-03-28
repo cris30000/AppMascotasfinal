@@ -263,7 +263,7 @@ fun LoginScreen(navController: NavHostController) {
             // Footer
             Row(
                 verticalAlignment = Alignment.CenterVertically,
-                modifier = Modifier.clickable { /* Navegar a registro */ }
+                modifier = Modifier.clickable { navController.navigate("registro") }
             ) {
                 Text("¿No tienes una cuenta? ", color = Color.White.copy(alpha = 0.7f), fontSize = 14.sp)
                 Text("Regístrate aquí", color = Color.White, fontWeight = FontWeight.Bold, fontSize = 14.sp)
